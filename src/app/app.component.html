@@ -1,0 +1,5 @@
+<div [ngClass]=" componentClasses ">
+    Messaggio super impo
+</div>
+<button (click)="visualize($event)">{{fraseControllo}}</button><br><hr>
+<dir-temp *ngIf="controlsVisible" (update)="receive($event)"></dir-temp>
